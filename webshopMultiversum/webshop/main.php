@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -7,7 +7,7 @@
     <base href="/" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="style.css" /> -->
     <link
       rel="shotcut icon"
       type="image/png"
@@ -16,7 +16,7 @@
   </head>
   <body>
     <header>
-      <?php include 'footer.php';?>
+      <?php include 'navigation/header/header.php';?>
       header
     </header>
     <section>
@@ -26,4 +26,4 @@
       foother
     </footer>
   </body>
-</html> -->
+</html>

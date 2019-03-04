@@ -1,3 +1,5 @@
-<section>
-  foother
-</section>
+<footer>
+    <div class="container">
+        Info
+    </div>
+</footer> 

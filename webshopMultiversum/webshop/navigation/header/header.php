@@ -1,5 +1,5 @@
 <?php 
 ?>
 <section>
-    <h1>header works</h1>
+    <h1 class="Title">header works</h1>
 </section> 

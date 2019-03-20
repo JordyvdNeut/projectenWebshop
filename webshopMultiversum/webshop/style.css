@@ -18,6 +18,9 @@ footer {
   height: 100px;
   width: 100%;
   overflow: hidden;
+  text-align: center;
+  color: #000000;
+  font-weight: bold;
 }
 
 /* Classes */

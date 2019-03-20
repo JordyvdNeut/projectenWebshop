@@ -11,6 +11,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="../style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="products.css" />
     <link rel="shotcut icon" type="image/png" href="../images/logo.png" />
 </head>
 
@@ -55,89 +56,89 @@
 
             <!-- products -->
                 <div class="product thumbnail col-md-4">
-                    <a href="../productDetail/productDetail.php">
+                    <!-- <a href="../productDetail/productDetail.php"> -->
                         <img src="/w3images/lights.jpg" alt="Sorry deze afbeelding is momenteel niet beschikbaar" />
                         <h3>"Naam"</h3>
                         <div class="caption">
                             <ul>
-                                <li>Resolutie</li>
-                                <li>Gezichtsveld</li>
-                                <li>Prijs</li>
+                                <li>Resolutie: ""</li>
+                                <li>Gezichtsveld: ""</li>
+                                <li>Prijs: ""</li>
                             </ul>
                         </div>
                         <!-- <button>Details</button> -->
-                    </a>
+                    <!-- </a> -->
                 </div>
                 <div class="product thumbnail col-md-4">
-                    <a href="../productDetail/productDetail.php">
+                    <!-- <a href="../productDetail/productDetail.php"> -->
                         <img src="/w3images/lights.jpg" alt="Sorry deze afbeelding is momenteel niet beschikbaar" />
                         <h3>"Naam"</h3>
                         <div class="caption">
                             <ul>
-                                <li>Resolutie</li>
-                                <li>Gezichtsveld</li>
-                                <li>Prijs</li>
+                                <li>Resolutie: ""</li>
+                                <li>Gezichtsveld: ""</li>
+                                <li>Prijs: ""</li>
                             </ul>
                         </div>
                         <!-- <button>Details</button> -->
-                    </a>
+                    <!-- </a> -->
                 </div>
                 <div class="product thumbnail col-md-4">
-                    <a href="../productDetail/productDetail.php">
+                    <!-- <a href="../productDetail/productDetail.php"> -->
                         <img src="/w3images/lights.jpg" alt="Sorry deze afbeelding is momenteel niet beschikbaar" />
                         <h3>"Naam"</h3>
                         <div class="caption">
                             <ul>
-                                <li>Resolutie</li>
-                                <li>Gezichtsveld</li>
-                                <li>Prijs</li>
+                                <li>Resolutie: ""</li>
+                                <li>Gezichtsveld: ""</li>
+                                <li>Prijs: ""</li>
                             </ul>
                         </div>
                         <!-- <button>Details</button> -->
-                    </a>
+                    <!-- </a> -->
                 </div>
             </div>
             <div class="product thumbnail col-md-4">
-                    <a href="../productDetail/productDetail.php">
+                    <!-- <a href="../productDetail/productDetail.php"> -->
                         <img src="/w3images/lights.jpg" alt="Sorry deze afbeelding is momenteel niet beschikbaar" />
                         <h3>"Naam"</h3>
                         <div class="caption">
                             <ul>
-                                <li>Resolutie</li>
-                                <li>Gezichtsveld</li>
-                                <li>Prijs</li>
+                                <li>Resolutie: ""</li>
+                                <li>Gezichtsveld: ""</li>
+                                <li>Prijs: ""</li>
                             </ul>
                         </div>
                         <!-- <button>Details</button> -->
-                    </a>
+                    <!-- </a> -->
                 </div>
                 <div class="product thumbnail col-md-4">
-                    <a href="../productDetail/productDetail.php">
+                    <!-- <a href="../productDetail/productDetail.php"> -->
                         <img src="/w3images/lights.jpg" alt="Sorry deze afbeelding is momenteel niet beschikbaar" />
                         <h3>"Naam"</h3>
                         <div class="caption">
                             <ul>
-                                <li>Resolutie</li>
-                                <li>Gezichtsveld</li>
-                                <li>Prijs</li>
+                                <li>Resolutie: ""</li>
+                                <li>Gezichtsveld: ""</li>
+                                <li>Prijs: ""</li>
                             </ul>
                         </div>
                         <!-- <button>Details</button> -->
-                    </a>
+                    <!-- </a> -->
                 </div>
                 <div class="product thumbnail col-md-4">
-                    <a href="../productDetail/productDetail.php">
+                    <!-- <a href="../productDetail/productDetail.php"> -->
                         <img src="/w3images/lights.jpg" alt="Sorry deze afbeelding is momenteel niet beschikbaar" />
                         <h3>"Naam"</h3>
                         <div class="caption">
                             <ul>
-                                <li>Resolutie</li>
-                                <li>Gezichtsveld</li>
-                                <li>Prijs</li>
+                                <li>Resolutie: ""</li>
+                                <li>Gezichtsveld: ""</li>
+                                <li>Prijs: ""</li>
                             </ul>
                         </div>
                         <!-- <button>Details</button> -->
-                    </a>
+                    <!-- </a> -->
                 </div>
             </div>
 

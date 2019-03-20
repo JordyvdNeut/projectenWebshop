@@ -1,22 +1,13 @@
-<!doctype html>
+<!doctype <!DOCTYPE html>
 <html>
-<!--
-  Class:    4A7B
-  Name:     Gino
-  Purpose:  Webshop
-  
-  dd-mm-yyyy  Description
-  ----------  ----------------------------------
-  07-05-2018  Initial
--->
+<head>
+    <link rel="stylesheet" type="text/css" media="screen" href="footer.css">
+</head>
 
-
-	<footer>
-	  <div class="footer">
+<footer>
+	<div class="footer">
         <p>&copy 2019 Multiversum, all rights reserved</p>
-	  </div>
-	</footer>
-	
-
-  </body>
+	</div>
+</footer>
+    
 </html>

@@ -1,3 +1,18 @@
 ul {
   list-style-type: none;
 }
+
+/* Classes */
+
+.filter {
+  height: 100%;
+}
+
+.sort {
+  background-color: white;
+}
+
+.product {
+  background-color: white;
+  margin: 10px;
+}

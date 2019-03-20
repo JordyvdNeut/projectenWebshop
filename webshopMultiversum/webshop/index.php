@@ -22,7 +22,7 @@
     <?php include 'home/home.php'; ?>
 
     <!-- Footer -->
-		<?php include 'navigation/footer/footer.php'; ?>
+	<?php include 'navigation/footer/footer.php'; ?>
 </body>
 
 </html> 

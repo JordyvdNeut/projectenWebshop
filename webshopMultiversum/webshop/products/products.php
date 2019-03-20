@@ -11,7 +11,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="../style.css" />
-    <link rel="shotcut icon" type="image/png" href="images/logo.png" />
+    <link rel="shotcut icon" type="image/png" href="../images/logo.png" />
 </head>
 
 <body>
@@ -22,7 +22,7 @@
     <section>
 
         <!-- filter -->
-        <nav class="col-sm-3 col-md-3 sidebar">
+        <!-- <nav class="col-sm-3 col-md-4 sidebar">
             <h2>Filter</h2>
             <select class="form-control">
                 <option selected>Open this select menu</option>
@@ -38,10 +38,10 @@
                 <option value="3">Three</option>
             </select>
             <br>
-        </nav>
+        </nav> -->
 
         <!-- sort -->
-        <div class="content flex-column col-sm-8 col-md-8">
+        <!-- <div class="content flex-column col-sm-8 col-md-8">
             <div class="sort col-sm-8 col-md-12">
                 <h2>VR Brillen</h2>
                 <p>Sorteren op: </p>
@@ -50,64 +50,105 @@
                     <option value="1">One</option>
                     <option value="2">Two</option>
                     <option value="3">Three</option>
-                </select>
-            </div>
+                </select> -->
+            <!-- </div> -->
 
             <!-- products -->
-            <div class="row">
-                <div class="product thumbnail col-md-3">
+                <div class="product thumbnail col-md-4">
                     <a href="../productDetail/productDetail.php">
-                        <img src="/w3images/lights.jpg" alt="Sorry deze afbeelding is momenteel niet beschikbaar" style="width:100%" />
+                        <img src="/w3images/lights.jpg" alt="Sorry deze afbeelding is momenteel niet beschikbaar" />
                         <h3>"Naam"</h3>
                         <div class="caption">
                             <ul>
-                                <li>iets</li>
-                                <li>iets</li>
-                                <li>iets</li>
+                                <li>Resolutie</li>
+                                <li>Gezichtsveld</li>
+                                <li>Prijs</li>
                             </ul>
                         </div>
-                        <button>Details</button>
+                        <!-- <button>Details</button> -->
                     </a>
                 </div>
-                <div class="product thumbnail col-md-3">
+                <div class="product thumbnail col-md-4">
                     <a href="../productDetail/productDetail.php">
-                        <img src="/w3images/lights.jpg" alt="Sorry deze afbeelding is momenteel niet beschikbaar" style="width:100%" />
+                        <img src="/w3images/lights.jpg" alt="Sorry deze afbeelding is momenteel niet beschikbaar" />
                         <h3>"Naam"</h3>
                         <div class="caption">
                             <ul>
-                                <li>iets</li>
-                                <li>iets</li>
-                                <li>iets</li>
+                                <li>Resolutie</li>
+                                <li>Gezichtsveld</li>
+                                <li>Prijs</li>
                             </ul>
                         </div>
-                        <button>Details</button>
+                        <!-- <button>Details</button> -->
                     </a>
                 </div>
-                <div class="product thumbnail col-md-3">
+                <div class="product thumbnail col-md-4">
                     <a href="../productDetail/productDetail.php">
-                        <img src="/w3images/lights.jpg" alt="Sorry deze afbeelding is momenteel niet beschikbaar" style="width:100%" />
+                        <img src="/w3images/lights.jpg" alt="Sorry deze afbeelding is momenteel niet beschikbaar" />
                         <h3>"Naam"</h3>
                         <div class="caption">
                             <ul>
-                                <li>iets</li>
-                                <li>iets</li>
-                                <li>iets</li>
+                                <li>Resolutie</li>
+                                <li>Gezichtsveld</li>
+                                <li>Prijs</li>
                             </ul>
                         </div>
-                        <button>Details</button>
+                        <!-- <button>Details</button> -->
                     </a>
                 </div>
             </div>
-        </div>
+            <div class="product thumbnail col-md-4">
+                    <a href="../productDetail/productDetail.php">
+                        <img src="/w3images/lights.jpg" alt="Sorry deze afbeelding is momenteel niet beschikbaar" />
+                        <h3>"Naam"</h3>
+                        <div class="caption">
+                            <ul>
+                                <li>Resolutie</li>
+                                <li>Gezichtsveld</li>
+                                <li>Prijs</li>
+                            </ul>
+                        </div>
+                        <!-- <button>Details</button> -->
+                    </a>
+                </div>
+                <div class="product thumbnail col-md-4">
+                    <a href="../productDetail/productDetail.php">
+                        <img src="/w3images/lights.jpg" alt="Sorry deze afbeelding is momenteel niet beschikbaar" />
+                        <h3>"Naam"</h3>
+                        <div class="caption">
+                            <ul>
+                                <li>Resolutie</li>
+                                <li>Gezichtsveld</li>
+                                <li>Prijs</li>
+                            </ul>
+                        </div>
+                        <!-- <button>Details</button> -->
+                    </a>
+                </div>
+                <div class="product thumbnail col-md-4">
+                    <a href="../productDetail/productDetail.php">
+                        <img src="/w3images/lights.jpg" alt="Sorry deze afbeelding is momenteel niet beschikbaar" />
+                        <h3>"Naam"</h3>
+                        <div class="caption">
+                            <ul>
+                                <li>Resolutie</li>
+                                <li>Gezichtsveld</li>
+                                <li>Prijs</li>
+                            </ul>
+                        </div>
+                        <!-- <button>Details</button> -->
+                    </a>
+                </div>
+            </div>
 
         <!-- paginator -->
-        <ul class="pagination">
+        <!-- <ul class="pagination">
             <li><a href="#">1</a></li>
             <li><a href="#">2</a></li>
             <li><a href="#">3</a></li>
             <li class="disabled"><a href="#">4</a></li>
             <li><a href="#">5</a></li>
-        </ul>
+        </ul> -->
     </section>
 
     <!-- Footer -->

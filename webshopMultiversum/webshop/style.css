@@ -11,6 +11,11 @@ nav {
   background-color: #1abc9c;
 }
 
+@font-face {
+  font-family: Quicksand;
+  src: url(Quicksand_Light.otf);
+}
+
 /* Classes */
 .content {
   margin: 15px;

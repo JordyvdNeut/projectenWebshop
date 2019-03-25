@@ -62,7 +62,7 @@
                         </ul>
                     </div>
                     <button class="detailbutton"><a href="../productDetail/productDetail.php">Details</a></button>
-					<button class="bestelbutton"><a href="">Bestellen</a></button>
+		    <button class="bestelbutton"><a href="">Bestellen</a></button>
                 </div>
                 <div class="product thumbnail col-md-4" href="../productDetail/productDetail.php">
                     <img src="../productImages/VR(2).jpeg" alt="Sorry deze afbeelding is momenteel niet beschikbaar" />
@@ -75,7 +75,7 @@
                         </ul>
                     </div>
                     <button class="detailbutton"><a href="../productDetail/productDetail.php">Details</a></button>
-					<button class="bestelbutton"><a href="">Bestellen</a></button>
+		    <button class="bestelbutton"><a href="">Bestellen</a></button>
                 </div>
 
                 <div class="product thumbnail col-md-4" href="../productDetail/productDetail.php">
@@ -89,7 +89,7 @@
                         </ul>
                     </div>
                     <button class="detailbutton"><a href="../productDetail/productDetail.php">Details</a></button>
-					<button class="bestelbutton"><a href="">Bestellen</a></button>
+		    <button class="bestelbutton"><a href="">Bestellen</a></button>
                 </div>
             </div>
 
@@ -104,7 +104,7 @@
                     </ul>
                 </div>
                 <button class="detailbutton"><a href="../productDetail/productDetail.php">Details</a></button>
-				<button class="bestelbutton"><a href="">Bestellen</a></button>
+	        <button class="bestelbutton"><a href="">Bestellen</a></button>
             </div>
 
             <div class="product thumbnail col-md-4" href="../productDetail/productDetail.php">
@@ -118,7 +118,7 @@
                     </ul>
                 </div>
                 <button class="detailbutton"><a href="../productDetail/productDetail.php">Details</a></button>
-				<button class="bestelbutton"><a href="">Bestellen</a></button>
+		<button class="bestelbutton"><a href="">Bestellen</a></button>
             </div>
 
             <div class="product thumbnail col-md-4">
@@ -132,7 +132,7 @@
                     </ul>
                 </div>
                 <button class="detailbutton"><a href="../productDetail/productDetail.php">Details</a></button>
-				<button class="bestelbutton"><a href="">Bestellen</a></button>
+		<button class="bestelbutton"><a href="">Bestellen</a></button>
             </div>
         </div>
 

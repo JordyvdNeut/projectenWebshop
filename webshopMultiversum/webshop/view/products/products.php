@@ -23,42 +23,34 @@
         <!-- products -->
         <?php
         if ($products) {
-            echo "<div class='product thumbnail col-md-3' href='index?op=details'>";
-            echo "<h3>{{ name }}</h3>";
-            echo "<img src='--' alt='Afbeelding moet vanuit database komen' />";
-            echo "<div class='caption'>";
-            echo "<table>";
-            echo "<tr>";
-            echo "<th>" . "Merk" . "</th>";
-            echo "<th>" . "Gezichtsveld" . "</th>";
-            echo "<th>" . "Prijs" . "</th>";
-            echo "<th>" . "actions" . "</th>";
-            echo "</tr>";
+            
             while($row = $products->fetch(PDO::FETCH_ASSOC)) {
-                var_dump($row);
-                echo "<br>";
+                echo "<div class='product thumbnail col-md-3' href='index?op=details'>";
+                echo "<h3>" . $row['Naam'] . "</h3>";
+                echo "<img src='--' alt='Afbeelding moet vanuit database komen' />";
+                echo "<div class='caption'>";
+                echo "<table>";
+                echo "<tr>";
+                echo "<th>" . "Merk" . "</th>";
+                echo "<td>" . $row['Merk']. "</td>";
+                echo "</tr>";
+                    
+                echo "<tr>";
+                echo "<th>" . "Gezichtsveld" . "</th>";
+                echo "<td>" . $row['Gezichtsveld'] . "</td>";
+                echo "</tr>";
+                echo "<tr>";
+                echo "<th>" . "Prijs" . "</th>";
+                echo "<td>" . $row['Prijs'] . "</td>";
+                echo "</tr>";
+                echo "</table>";
+                echo "</div>";
+                echo "<a href='index?op=details'><button class='detailbutton'>Details</button></a>";
+                echo "<a href='index?op=winkelwagen'><button class='bestelbutton'>Bestellen</button></a>";
+                echo "</div";
             }
         }
         ?>
-        <table>
-                    <tr>
-                        <th>Merk</th>
-                        <td>{{$merk}}</td>
-                    </tr>
-                    <tr>
-                        <th>Gezichtsveld</th>
-                        <td>{{$gezichtsveld}}</td>
-                    </tr>
-                    <tr>
-                        <th>Prijs</th>
-                        <td>{{$prijs}}</td>
-                    </tr>
-                </table>
-            </div>
-
-            <a href="index?op=details"><button class="detailbutton">Details</button></a>
-		    <a href="index?op=winkelwagen"><button class="bestelbutton"><a href="">Bestellen</button></a>
-                </div>
 
         <!-- paginator -->
         <!-- <ul class="pagination">

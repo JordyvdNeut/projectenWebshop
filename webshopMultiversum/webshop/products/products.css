@@ -11,6 +11,11 @@ a:hover {
     text-decoration: none;
 }
 
+@font-face {
+  font-family: Quicksand;
+  src: url(Quicksand_Light.otf);
+}
+
 /* Classes */
 
 .filter {

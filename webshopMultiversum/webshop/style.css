@@ -13,6 +13,10 @@ body {
   src: url(Quicksand_Light.otf);
 }
 
+.h1, .h2, .h3 {
+  font-family: Quicksand; 
+}
+
 /* Classes */
 .content {
   margin: 15px;

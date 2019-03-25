@@ -80,7 +80,7 @@
 
                 <div class="product thumbnail col-md-4" href="../productDetail/productDetail.php">
                     <img src="../productImages/VR(3).png" alt="Sorry deze afbeelding is momenteel niet beschikbaar" />
-                    <h3>"Naam"</h3>
+                    <h3 class="producttitle">"Naam"</h3>
                     <div class="caption">
                         <ul>
                             <li>Merk: ""</li>
@@ -95,7 +95,7 @@
 
             <div class="product thumbnail col-md-4" href="../productDetail/productDetail.php">
                 <img src="../productImages/VR(4).jpeg" alt="Sorry deze afbeelding is momenteel niet beschikbaar" />
-                <h3>"Naam"</h3>
+                <h3 class="producttitle">"Naam"</h3>
                 <div class="caption">
                     <ul>
                         <li>Merk: ""</li>
@@ -109,7 +109,7 @@
 
             <div class="product thumbnail col-md-4" href="../productDetail/productDetail.php">
                 <img src="../productImages/VR(5).png" alt="Sorry deze afbeelding is momenteel niet beschikbaar" />
-                <h3>"Naam"</h3>
+                <h3 class="producttitle">"Naam"</h3>
                 <div class="caption">
                     <ul>
                         <li>Merk: ""</li>
@@ -123,7 +123,7 @@
 
             <div class="product thumbnail col-md-4">
                 <img src="/w3images/lights.jpg" alt="Sorry deze afbeelding is momenteel niet beschikbaar" />
-                <h3>"Naam"</h3>
+                <h3 class="producttitle">"Naam"</h3>
                 <div class="caption">
                     <ul>
                         <li>Merk: ""</li>

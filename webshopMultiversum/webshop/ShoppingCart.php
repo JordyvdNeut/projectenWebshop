@@ -15,8 +15,10 @@
 </head>
   <body>
     <section>
-	  <div>Shopping Cart</div>
-	  <div></div>
+	  <div>
+	    <h2>Shopping Cart</h2>
+          </div>
+	  <div>products</div>
 	</section>
   </body>
 </html> 

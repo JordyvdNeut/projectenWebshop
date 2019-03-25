@@ -20,7 +20,7 @@ a:hover {
 
 .filter {
   height: 100%;
-  font-family: Quicksand;
+  font-family: quicksand;
 }
 
 .sort {
@@ -48,5 +48,9 @@ a:hover {
   border-radius: 5px;
   float: right;
   margin-right: 10px
+}
+
+.producttitle {
+  font-family: quicksand 
 }
 

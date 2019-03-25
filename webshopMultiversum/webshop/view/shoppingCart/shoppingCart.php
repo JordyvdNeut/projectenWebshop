@@ -8,7 +8,7 @@
   <body>
     <section>
 	  <div>
-	    <h2>Shopping Cart</h2>
+	    <h2 class="shoppingCartTitle">Shopping Cart</h2>
           </div>
 	  <div>products</div>
 	</section>

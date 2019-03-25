@@ -5,7 +5,7 @@
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <div class="navbar-header">
-            <img alt="afbeelding niet gevonden" src="images/logo.png" href="images/logo.png" width="15%">
+            <img alt="afbeelding niet gevonden" src="../images/logo.png" href="../images/logo.png" width="15%">
             <a class="navbar-brand">Multiversum</a>
         </div>
         <ul class="nav navbar-nav">

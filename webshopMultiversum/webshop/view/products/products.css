@@ -7,8 +7,12 @@ a {
 }
 
 a:hover {
-    color: #f1c40f;
-    text-decoration: none;
+  color: #f1c40f;
+  text-decoration: none;
+}
+
+.h1, .h2, .h3 {
+  font-family: Quicksand; 
 }
 
 /* Classes */

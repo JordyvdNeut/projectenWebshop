@@ -14,15 +14,17 @@
     <link rel="shotcut icon" type="image/svg" href="images/logo.svg" />
 </head>
 
-<body>
-    <!-- Navigation bar -->
-    <?php include 'navigation/navBar/navBar.php'; ?>
-
-    <!-- Content -->
-    <?php include 'home/home.php'; ?>
-
-    <!-- Footer -->
-	<?php include 'navigation/footer/footer.php'; ?>
-</body>
-
 </html> 
+
+<?php
+  // Header
+  include 'navigation/navBar.php';
+  // Content
+  require_once 'controller/WebshopController.php';
+  
+  $controller = new WebshopController();
+  $controller->handleRequest();
+
+  // Footer
+  include 'navigation/footer/footer.php';
+?>

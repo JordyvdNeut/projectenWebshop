@@ -35,7 +35,7 @@
                         </ul>
                     </div>
                     <a href="../productDetail/productDetail.php"><button class="detailbutton">Details</button></a>
-		    <button class="bestelbutton"><a href="">Bestellen</a></button>
+		    <a href=""><button class="bestelbutton"><a href="">Bestellen</button></a>
                 </div>
                 <div class="product thumbnail col-md-4" href="../productDetail/productDetail.php">
                     <img src="../productImages/VR(2).jpeg" alt="Sorry deze afbeelding is momenteel niet beschikbaar" />
@@ -47,13 +47,12 @@
                             <li>Prijs: ""</li>
                         </ul>
                     </div>
-                    <button class="detailbutton"><a href="../productDetail/productDetail.php">Details</a></button>
-		    <button class="bestelbutton"><a href="">Bestellen</a></button>
+                    <a href="../productDetail/productDetail.php"><button class="detailbutton">Details</button></a>
                 </div>
 
                 <div class="product thumbnail col-md-4" href="../productDetail/productDetail.php">
                     <img src="../productImages/VR(3).png" alt="Sorry deze afbeelding is momenteel niet beschikbaar" />
-                    <h3>"Naam"</h3>
+                    <h3 class="producttitle">"Naam"</h3>
                     <div class="caption">
                         <ul>
                             <li>Merk: ""</li>
@@ -61,14 +60,14 @@
                             <li>Prijs: ""</li>
                         </ul>
                     </div>
-                    <button class="detailbutton"><a href="../productDetail/productDetail.php">Details</a></button>
-		    <button class="bestelbutton"><a href="">Bestellen</a></button>
+                    <a href="../productDetail/productDetail.php"><button class="detailbutton">Details</button></a>
+		    <a href=""><button class="bestelbutton"><a href="">Bestellen</button></a>
                 </div>
             </div>
 
             <div class="product thumbnail col-md-4" href="../productDetail/productDetail.php">
                 <img src="../productImages/VR(4).jpeg" alt="Sorry deze afbeelding is momenteel niet beschikbaar" />
-                <h3>"Naam"</h3>
+                <h3 class="producttitle">"Naam"</h3>
                 <div class="caption">
                     <ul>
                         <li>Merk: ""</li>
@@ -76,13 +75,13 @@
                         <li>Prijs: ""</li>
                     </ul>
                 </div>
-                <button class="detailbutton"><a href="../productDetail/productDetail.php">Details</a></button>
-	        <button class="bestelbutton"><a href="">Bestellen</a></button>
+                  <a href="../productDetail/productDetail.php"><button class="detailbutton">Details</button></a>
+		  <a href=""><button class="bestelbutton"><a href="">Bestellen</button></a>
             </div>
 
             <div class="product thumbnail col-md-4" href="../productDetail/productDetail.php">
                 <img src="../productImages/VR(5).png" alt="Sorry deze afbeelding is momenteel niet beschikbaar" />
-                <h3>"Naam"</h3>
+                <h3 class="producttitle">"Naam"</h3>
                 <div class="caption">
                     <ul>
                         <li>Merk: ""</li>
@@ -90,13 +89,13 @@
                         <li>Prijs: ""</li>
                     </ul>
                 </div>
-                <button class="detailbutton"><a href="../productDetail/productDetail.php">Details</a></button>
-		<button class="bestelbutton"><a href="">Bestellen</a></button>
+                <a href="../productDetail/productDetail.php"><button class="detailbutton">Details</button></a>
+		<a href=""><button class="bestelbutton"><a href="">Bestellen</button></a>
             </div>
 
             <div class="product thumbnail col-md-4">
                 <img src="/w3images/lights.jpg" alt="Sorry deze afbeelding is momenteel niet beschikbaar" />
-                <h3>"Naam"</h3>
+                <h3 class="producttitle">"Naam"</h3>
                 <div class="caption">
                     <ul>
                         <li>Merk: ""</li>
@@ -104,8 +103,8 @@
                         <li>Prijs: ""</li>
                     </ul>
                 </div>
-                <button class="detailbutton"><a href="../productDetail/productDetail.php">Details</a></button>
-		<button class="bestelbutton"><a href="">Bestellen</a></button>
+                 <a href="../productDetail/productDetail.php"><button class="detailbutton">Details</button></a>
+		 <a href=""><button class="bestelbutton"><a href="">Bestellen</button></a>
             </div>
         </div>
 

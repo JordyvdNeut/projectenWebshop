@@ -61,8 +61,8 @@
                             <li>Prijs: ""</li>
                         </ul>
                     </div>
-                    <button class="detailbutton"><a href="../productDetail/productDetail.php">Details</a></button>
-		    <button class="bestelbutton"><a href="">Bestellen</a></button>
+                    <a href="../productDetail/productDetail.php"><button class="detailbutton">Details</button></a>
+		    <a href=""><button class="bestelbutton"><a href="">Bestellen</button></a>
                 </div>
                 <div class="product thumbnail col-md-4" href="../productDetail/productDetail.php">
                     <img src="../productImages/VR(2).jpeg" alt="Sorry deze afbeelding is momenteel niet beschikbaar" />
@@ -74,8 +74,8 @@
                             <li>Prijs: ""</li>
                         </ul>
                     </div>
-                    <button class="detailbutton"><a href="../productDetail/productDetail.php">Details</a></button>
-		    <button class="bestelbutton"><a href="">Bestellen</a></button>
+                    <a href="../productDetail/productDetail.php"><button class="detailbutton">Details</button></a>
+		    <a href=""><button class="bestelbutton"><a href="">Bestellen</button></a>
                 </div>
 
                 <div class="product thumbnail col-md-4" href="../productDetail/productDetail.php">
@@ -88,8 +88,8 @@
                             <li>Prijs: ""</li>
                         </ul>
                     </div>
-                    <button class="detailbutton"><a href="../productDetail/productDetail.php">Details</a></button>
-		    <button class="bestelbutton"><a href="">Bestellen</a></button>
+                    <a href="../productDetail/productDetail.php"><button class="detailbutton">Details</button></a>
+		    <a href=""><button class="bestelbutton"><a href="">Bestellen</button></a>
                 </div>
             </div>
 
@@ -103,8 +103,8 @@
                         <li>Prijs: ""</li>
                     </ul>
                 </div>
-                <button class="detailbutton"><a href="../productDetail/productDetail.php">Details</a></button>
-	        <button class="bestelbutton"><a href="">Bestellen</a></button>
+                  <a href="../productDetail/productDetail.php"><button class="detailbutton">Details</button></a>
+		  <a href=""><button class="bestelbutton"><a href="">Bestellen</button></a>
             </div>
 
             <div class="product thumbnail col-md-4" href="../productDetail/productDetail.php">
@@ -117,8 +117,8 @@
                         <li>Prijs: ""</li>
                     </ul>
                 </div>
-                <button class="detailbutton"><a href="../productDetail/productDetail.php">Details</a></button>
-		<button class="bestelbutton"><a href="">Bestellen</a></button>
+                <a href="../productDetail/productDetail.php"><button class="detailbutton">Details</button></a>
+		<a href=""><button class="bestelbutton"><a href="">Bestellen</button></a>
             </div>
 
             <div class="product thumbnail col-md-4">
@@ -131,8 +131,8 @@
                         <li>Prijs: ""</li>
                     </ul>
                 </div>
-                <button class="detailbutton"><a href="../productDetail/productDetail.php">Details</a></button>
-		<button class="bestelbutton"><a href="">Bestellen</a></button>
+                 <a href="../productDetail/productDetail.php"><button class="detailbutton">Details</button></a>
+		 <a href=""><button class="bestelbutton"><a href="">Bestellen</button></a>
             </div>
         </div>
 

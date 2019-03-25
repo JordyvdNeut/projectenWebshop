@@ -29,8 +29,7 @@
     }
 
     public function readData($sql) {
-      $this->query($sql);
-      return $this->sth->fetch(PDO::FETCH_ASSOC);
+      return $this->dbh->query($sql,PDO::FETCH_ASSOC);
     }
   }
 ?>

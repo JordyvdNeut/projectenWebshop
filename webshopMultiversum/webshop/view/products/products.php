@@ -7,7 +7,6 @@
 
 <body>
     <section>
-
         <!-- filter -->
         <nav class="col-sm-2 col-md-3 sidebar">
             <div class="filter">
@@ -22,11 +21,26 @@
         </nav>
 
         <!-- products -->
-        <div class="product thumbnail col-md-3" href="index?op=details">
-            <h3>{{ $productNaam }}</h3>
-            <img src="$--" alt="Afbeelding moet vanuit database komen" />
-            <div class="caption">
-                <table>
+        <?php
+        if ($products) {
+            echo "<div class='product thumbnail col-md-3' href='index?op=details'>";
+            echo "<h3>{{ name }}</h3>";
+            echo "<img src='--' alt='Afbeelding moet vanuit database komen' />";
+            echo "<div class='caption'>";
+            echo "<table>";
+            echo "<tr>";
+            echo "<th>" . "Merk" . "</th>";
+            echo "<th>" . "Gezichtsveld" . "</th>";
+            echo "<th>" . "Prijs" . "</th>";
+            echo "<th>" . "actions" . "</th>";
+            echo "</tr>";
+            while($row = $products->fetch(PDO::FETCH_ASSOC)) {
+                var_dump($row);
+                echo "<br>";
+            }
+        }
+        ?>
+        <table>
                     <tr>
                         <th>Merk</th>
                         <td>{{$merk}}</td>

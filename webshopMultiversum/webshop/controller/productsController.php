@@ -3,7 +3,7 @@
   
     class ProductsController {
     public function __construct() {
-        $this->ContactsLogic = new ProductsLogic();
+        $this->ProductsLogic = new ProductsLogic();
     }
     
     public function __destruct() {}
@@ -56,7 +56,7 @@
       include 'view/shoppingCart/shoppingCart.php';
     }
     public function collectReadProducts() {
-      // $products = $this->ProductsLogic->readProducts();
+      $products = $this->ProductsLogic->readProducts();
       include 'view/products/products.php';
     }
   }

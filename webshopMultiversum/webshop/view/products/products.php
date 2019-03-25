@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Multiversum</title>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -27,28 +21,7 @@
                 <option value="2">Two</option>
                 <option value="3">Three</option>
             </select>
-            <br>
-            <select class="form-control">
-                <option selected>Open this select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-            </select>
-            <br>
         </nav>
-
-        <!-- sort -->
-        <div class="content flex-column col-sm-8 col-md-8">
-            <div class="sort col-sm-8 col-md-12">
-                <h2>VR Brillen</h2>
-                <p>Sorteren op: </p>
-                <select class="form-control">
-                    <option selected>Open this select menu</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
-            </div>
 
             <!-- products -->
                 <div class="product thumbnail col-md-4" href="../productDetail/productDetail.php">
@@ -61,7 +34,7 @@
                             <li>Prijs: ""</li>
                         </ul>
                     </div>
-                    <button class="detailbutton"><a href="../productDetail/productDetail.php">Details</a></button>
+                    <a href="../productDetail/productDetail.php"><button class="detailbutton">Details</button></a>
 		    <button class="bestelbutton"><a href="">Bestellen</a></button>
                 </div>
                 <div class="product thumbnail col-md-4" href="../productDetail/productDetail.php">
@@ -137,13 +110,13 @@
         </div>
 
         <!-- paginator -->
-        <ul class="pagination">
+        <!-- <ul class="pagination">
             <li><a href="#">1</a></li>
             <li><a href="#">2</a></li>
             <li><a href="#">3</a></li>
             <li class="disabled"><a href="#">4</a></li>
             <li><a href="#">5</a></li>
-        </ul>
+        </ul> -->
     </section>
 </body>
 

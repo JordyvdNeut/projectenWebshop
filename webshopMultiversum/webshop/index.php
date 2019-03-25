@@ -18,13 +18,14 @@
 
 <?php
   // Header
-  include 'navigation/navBar.php';
+  include 'view/navigation/navBar/navBar.php';
+
   // Content
-  require_once 'controller/WebshopController.php';
-  
-  $controller = new WebshopController();
+  require_once 'controller/productsController.php';
+
+  $controller = new ProductsController();
   $controller->handleRequest();
 
   // Footer
-  include 'navigation/footer/footer.php';
+  include 'view/navigation/footer/footer.php';
 ?>

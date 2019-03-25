@@ -4,9 +4,17 @@ a {
 }
 
 a:hover {
-    color: #f1c40f;
-    text-decoration: none;
+  color: #f1c40f;
+  text-decoration: none;
 }
 
 /* Classes */
+
+.shoppingCartTitle {
+  Font-family: Quicksand;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  Margin-left: auto;
+  Margin-right: auto;
+}
 

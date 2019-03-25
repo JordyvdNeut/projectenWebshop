@@ -1,0 +1,12 @@
+
+a {
+  color: #fff;
+}
+
+a:hover {
+    color: #f1c40f;
+    text-decoration: none;
+}
+
+/* Classes */
+

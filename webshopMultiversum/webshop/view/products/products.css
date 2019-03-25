@@ -11,20 +11,11 @@ a:hover {
     text-decoration: none;
 }
 
-@font-face {
-  font-family: Quicksand;
-  src: url(Quicksand_Light.otf);
-}
-
 /* Classes */
 
 .filter {
   height: 100%;
-  font-family: quicksand;
-}
-
-.sort {
-  background-color: white;
+  background-color: #1abc9c;
 }
 
 .product {
@@ -48,9 +39,5 @@ a:hover {
   border-radius: 5px;
   float: right;
   margin-right: 10px
-}
-
-.producttitle {
-  font-family: quicksand 
 }
 

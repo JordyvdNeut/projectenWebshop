@@ -35,11 +35,11 @@
     }
 
     public function getShoppingCart() {
-      try {
+    //   try {
         
-      } catch (exception $e) {
-      throw $e;
-    }
+    //   } catch (exception $e) {
+    //   throw $e;
+    // }
     }
   }
 ?>

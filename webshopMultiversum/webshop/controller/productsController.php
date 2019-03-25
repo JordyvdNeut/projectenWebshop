@@ -18,6 +18,9 @@
           case 'createProduct' :
           $this->collectCreateUser();
           break;
+          case 'details':
+          $this->collectDetails();
+          break;
           case 'winkelwagen':
           $this->collectShoppingCart();
           break;
@@ -44,9 +47,13 @@
       $createProduct = $this->ProductsLogic->createProduct($formData);
       include 'view/succes.php'; // bestaat nog niet
     }
+    public function collectDetails() {
+      // $products = $this->ProductsLogic->collectDetails();
+      include 'view/productDetails/productDetails.php';
+    }
     public function collectShoppingCart() {
-      $shoppingCart = $this->ProductsLogic->getShoppingCart();
-
+      // $shoppingCart = $this->ProductsLogic->getShoppingCart();
+      include 'view/shoppingCart/shoppingCart.php';
     }
     public function collectReadProducts() {
       // $products = $this->ProductsLogic->readProducts();

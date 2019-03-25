@@ -11,7 +11,7 @@
         <ul class="nav navbar-nav">
             <li><a href="index">Home</a></li>
             <li><a href="index?op=products">Producten</a></li>
-            <li><a href="index?op=winkelwagen"><i class="fa fa-shopping-cart"></i></a></li>
+            <li><a href="index?op=winkelwagen">winkelwagen<i class="fa fa-shopping-cart"></i></a></li>
         </ul>
     </div>
 </nav> 

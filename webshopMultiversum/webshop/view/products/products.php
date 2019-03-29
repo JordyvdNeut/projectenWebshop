@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" media="screen" href="../style.css" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="products.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../style.css" />
 </head>
 
 <body>
     <section>
+        <button class="bestelbutton">yeet</button>
         <!-- filter -->
-        <nav class="col-sm-2 col-md-3 sidebar">
-            <div class="filter">
+        <div class="filter col-md-3 sidebar">
+            <div>
                 <h2>Filter</h2>
                 <select class="form-control">
                     <option selected>Open this select menu</option>
@@ -18,48 +23,40 @@
                     <option value="3">Three</option>
                 </select>
             <div>
-        </nav>
+        </div>
 
         <!-- products -->
         <?php
+        $html = "";
         if ($products) {
-            
             while($row = $products->fetch(PDO::FETCH_ASSOC)) {
-                echo "<div class='product thumbnail col-md-3' href='index?op=details'>";
-                echo "<h3>" . $row['Naam'] . "</h3>";
-                echo "<img src='--' alt='Afbeelding moet vanuit database komen' />";
-                echo "<div class='caption'>";
-                echo "<table>";
-                echo "<tr>";
-                echo "<th>" . "Merk" . "</th>";
-                echo "<td>" . $row['Merk']. "</td>";
-                echo "</tr>";
+                $html .= "<div class='product thumbnail' href='index?op=details'>";
+                $html .=  "<h3>" . $row['Naam'] . "</h3>";
+                $html .=  "<img src='index?op=" . $row['Img'] . " alt='AfbeeldingMoetVanuitDatabaseKomen' />";
+                $html .=  "<div class='caption'>";
+                $html .=  "<table>";
+                $html .=  "<tr>";
+                $html .=  "<th>" . "Merk" . "</th>";
+                $html .=  "<td>" . $row['Merk']. "</td>";
+                $html .=  "</tr>";
                     
-                echo "<tr>";
-                echo "<th>" . "Gezichtsveld" . "</th>";
-                echo "<td>" . $row['Gezichtsveld'] . "</td>";
-                echo "</tr>";
-                echo "<tr>";
-                echo "<th>" . "Prijs" . "</th>";
-                echo "<td>" . $row['Prijs'] . "</td>";
-                echo "</tr>";
-                echo "</table>";
-                echo "</div>";
-                echo "<a href='index?op=details'><button class='detailbutton'>Details</button></a>";
-                echo "<a href='index?op=winkelwagen'><button class='bestelbutton'>Bestellen</button></a>";
-                echo "</div";
+                $html .=  "<tr>";
+                $html .=  "<th>" . "Gezichtsveld" . "</th>";
+                $html .=  "<td>" . $row['Gezichtsveld'] . "</td>";
+                $html .=  "</tr>";
+                $html .=  "<tr>";
+                $html .=  "<th>" . "Prijs" . "</th>";
+                $html .=  "<td>" . $row['Prijs'] . "</td>";
+                $html .=  "</tr>";
+                $html .=  "</table>";
+                $html .=  "</div>";
+                $html .=  "<a href='index?op=details&id=" . $row['ProductsID'] . "'><button class='detailbutton'>Details</button></a>";
+                $html .=  "<a href='index?op=winkelwagen'><button class='bestelbutton'>Bestellen</button></a>";
+                $html .=  "</div";
             }
+            echo $html;
         }
         ?>
-
-        <!-- paginator -->
-        <!-- <ul class="pagination">
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li class="disabled"><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-        </ul> -->
     </section>
 </body>
 

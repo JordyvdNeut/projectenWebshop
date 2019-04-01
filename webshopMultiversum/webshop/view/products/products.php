@@ -32,7 +32,7 @@
             while($row = $products->fetch(PDO::FETCH_ASSOC)) {
                 $html .= "<div class='product thumbnail' href='index?op=details'>";
                 $html .=  "<h3>" . $row['Naam'] . "</h3>";
-                $html .=  "<img src='index?op=" . $row['Img'] . " alt='AfbeeldingMoetVanuitDatabaseKomen' />";
+                $html .=  "<img src='data:image/jpeg;base64,'.base64_encode(" . $row['Img'] . ")' alt='Sorry deze afbeelding kan momenteel niet geladen worden' />";
                 $html .=  "<div class='caption'>";
                 $html .=  "<table>";
                 $html .=  "<tr>";

@@ -27,8 +27,18 @@
         throw $e;
     }
   }
+    
+  public function collectBrands() {
+    try {
+      $sql = "SELECT DISTINCT Merk FROM producten";
+      $result = $this->DataHandler->readsData($sql);
+      return $result;
+  } catch (exception $e) {
+      throw $e;
+  }
+}
 
-    public function getShoppingCart() {}
+    public function collectShoppingCart() {}
     public function __destruct() {}
   }
 ?>

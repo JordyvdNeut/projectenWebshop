@@ -39,6 +39,19 @@
     public function getHomePage() {
       include 'view/home/home.php';
     }
+    public function collectReadProducts() {
+      $products = $this->ProductsLogic->readProducts();
+      $brands = $this->ProductsLogic->collectBrands();
+      include 'view/products/products.php';
+    }
+    public function collectDetails($id) {
+      $details = $this->ProductsLogic->collectDetails($id);
+      include 'view/productDetails/productDetails.php';
+    }
+    public function collectShoppingCart() {
+      // $shoppingCart = $this->ProductsLogic->collectShoppingCart();
+      include 'view/shoppingCart/shoppingCart.php';
+    }
     public function collectCreateProductForm() {
       include 'view/createProducts.php';
     }
@@ -47,17 +60,6 @@
       $createProduct = $this->ProductsLogic->createProduct($formData);
       include 'view/succes.php'; // bestaat nog niet
     }
-    public function collectDetails($id) {
-      $details = $this->ProductsLogic->collectDetails($id);
-      include 'view/productDetails/productDetails.php';
-    }
-    public function collectShoppingCart() {
-      // $shoppingCart = $this->ProductsLogic->getShoppingCart();
-      include 'view/shoppingCart/shoppingCart.php';
-    }
-    public function collectReadProducts() {
-      $products = $this->ProductsLogic->readProducts();
-      include 'view/products/products.php';
-    }
+    
   }
 ?>

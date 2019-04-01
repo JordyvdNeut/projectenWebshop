@@ -1,10 +1,10 @@
 html, body{
   margin: 0px;
 }
+
 body {
   height: 100%;
   margin: 15px;
-  /* background-color: antiquewhite; */
   background-color: #2c3e50;
 }
 
@@ -23,20 +23,23 @@ button {
 }
 
 /* Classes */
-.content {
+
+.productMarg {
   margin: 15px;
 }
-
-.popProducts{
-  background-color: white;
-  padding: 5px;
-}
-
 .footer {
   background-color: #f1c40f;
+  border-radius: 5px;
   height: 25px;
   width: 100%;
   overflow: hidden;
+  font-weight: bold;
+}
+
+.filter {
+  background-color: #1abc9c;
+  border-radius: 5px;
+  height: 500px;
   color: #000000;
   font-weight: bold;
 }

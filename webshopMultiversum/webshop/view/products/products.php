@@ -11,7 +11,7 @@
 
 <body>
     <section>
-        <button class="bestelbutton">yeet</button>
+    
         <!-- filter -->
         <div class="filter col-md-3 sidebar">
             <div>

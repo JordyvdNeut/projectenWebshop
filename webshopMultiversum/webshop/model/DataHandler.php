@@ -28,8 +28,14 @@
       $this->dbh = null;
     }
 
-    public function readData($sql) {
+    // public function readData($sql){
+    //   $this->query($sql);
+    //   return $this->sth->fetch(PDO::FETCH_ASSOC);
+    // }
+
+    public function readsData($sql){
       return $this->dbh->query($sql,PDO::FETCH_ASSOC);
     }
+  
   }
 ?>

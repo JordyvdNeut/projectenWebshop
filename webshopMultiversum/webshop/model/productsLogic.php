@@ -11,12 +11,22 @@
       public function readProducts() {
         try {
           $sql = "SELECT * FROM producten";
-          $result = $this->DataHandler->readData($sql);
+          $result = $this->DataHandler->readsData($sql);
           return $result;
       } catch (exception $e) {
           throw $e;
       }
     }
+    
+    public function collectDetails($id) {
+      try {
+        $sql = "SELECT * FROM producten WHERE productsId = " . $id;
+        $result = $this->DataHandler->readsData($sql);
+        return $result;
+    } catch (exception $e) {
+        throw $e;
+    }
+  }
 
     public function getShoppingCart() {}
     public function __destruct() {}

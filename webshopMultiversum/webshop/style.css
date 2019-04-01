@@ -13,8 +13,13 @@ body {
   src: url(Quicksand_Light.otf);
 }
 
-.h1, .h2, .h3 {
-  font-family: Quicksand; 
+table {
+  table-layout: auto;
+  padding: 5px;
+}
+
+button {
+  margin: 5px;
 }
 
 /* Classes */
@@ -26,5 +31,15 @@ body {
   background-color: white;
   padding: 5px;
 }
+
+.footer {
+  background-color: #f1c40f;
+  height: 25px;
+  width: 100%;
+  overflow: hidden;
+  color: #000000;
+  font-weight: bold;
+}
+
 
 /* ID's */

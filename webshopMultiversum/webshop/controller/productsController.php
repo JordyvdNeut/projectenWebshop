@@ -19,7 +19,7 @@
           $this->collectCreateUser();
           break;
           case 'details':
-          $this->collectDetails();
+          $this->collectDetails($_REQUEST['id']);
           break;
           case 'winkelwagen':
           $this->collectShoppingCart();
@@ -47,8 +47,8 @@
       $createProduct = $this->ProductsLogic->createProduct($formData);
       include 'view/succes.php'; // bestaat nog niet
     }
-    public function collectDetails() {
-      // $products = $this->ProductsLogic->collectDetails();
+    public function collectDetails($id) {
+      $details = $this->ProductsLogic->collectDetails($id);
       include 'view/productDetails/productDetails.php';
     }
     public function collectShoppingCart() {

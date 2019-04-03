@@ -3,7 +3,7 @@
     $html = "";
     // Filter
     if($brands) {
-        $html .=  "<div class='filter col-md-1 sidebar'>";
+        $html .=  "<div class='filter col-md-2 sidebar'>";
         $html .=  "<h2>Filter</h2>";
         $html .=  "<form action='/action_page.php'>";
         while($row = $brands->fetch(PDO::FETCH_ASSOC)) {

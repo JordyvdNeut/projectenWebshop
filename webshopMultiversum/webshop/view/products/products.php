@@ -3,7 +3,7 @@
     $html = "";
     // Filter
     if($brands) {
-        $html .=  "<div class='filter col-md-2 sidebar'>";
+        $html .=  "<div class='filter col-md-1 sidebar'>";
         $html .=  "<h2>Filter</h2>";
         $html .=  "<form action='/action_page.php'>";
         while($row = $brands->fetch(PDO::FETCH_ASSOC)) {
@@ -18,26 +18,22 @@
         while($row = $products->fetch(PDO::FETCH_ASSOC)) {
             $html .= "<div class='col-md-3 productMarg thumbnail' href='index?op=details'>";
             $html .=  "<h3>" . $row['Naam'] . "</h3>";
-            // $html .=  "<img src='index?op=" . $row['Img'] . "' alt='AfbeeldingMoetVanuitDatabaseKomen' />";
+            // $html .=  "<img src='" . echo $row['Img']; . "' class='img-responsive' alt='fix img' />";
             $html .=  "<div class='caption'>";
             $html .=  "<table>";
+            $html .=  "<tr>";
+            $html .=  "<th>" . "Prijs" . "</th>";
+            $html .=  "<td align='right'>" . $row['Prijs'] . "</td>";
+            $html .=  "</tr>"; 
             $html .=  "<tr>";
             $html .=  "<th>" . "Merk" . "</th>";
             $html .=  "<td align='right'>" . $row['Merk']. "</td>";
             $html .=  "</tr>";
-                
             $html .=  "<tr>";
-            $html .=  "<th>" . "Gezichtsveld" . "</th>";
-            $html .=  "<td align='right'>" . $row['Gezichtsveld'] . "</td>";
-            $html .=  "</tr>";
-            $html .=  "<tr>";
-            $html .=  "<th>" . "Prijs" . "</th>";
-            $html .=  "<td align='right'>" . $row['Prijs'] . "</td>";
+            $html .=  "<th>" . "Resolutie" . "</th>";
+            $html .=  "<td align='right'>" . $row['Resolutie'] . "</td>";
             $html .=  "</tr>";
             $html .=  "</table>";
-            $html .=  "<div class='text-right'>";
-            $html .=  "<h6>Gezichtsveld word weergegeven in grades</h6>";
-            $html .=  "</div>";
             $html .=  "</div>";
             $html .=  "<a href='index?op=details&id=" . $row['ProductsID'] . "'><button class='btn'>Details</button></a>";
             $html .=  "<a href='index?op=winkelwagen'><button type='submit' class='btn'>Bestellen</button></a>";

@@ -7,7 +7,7 @@
     public function __construct() {
       $this->DataHandler = new DataHandler("localhost","mysql","webshop(projecten)","root","");
       }
-
+      public function createProduct() {}
       public function readProducts() {
         try {
           $sql = "SELECT * FROM producten";
@@ -39,7 +39,6 @@
 }
 
     public function collectShoppingCart() {}
-      
     public function __destruct() {}
   }
 ?>

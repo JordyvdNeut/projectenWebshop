@@ -1,0 +1,45 @@
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: #fff;
+}
+
+a:hover {
+  color: #f1c40f;
+  text-decoration: none;
+}
+
+/* Classes */
+
+.filter {
+  /* height: 100%;
+  width: 20%; */
+  background-color: #1abc9c;
+}
+
+.product {
+  background-color: white;
+  /* width: 25%; */
+  margin: 10px;
+}
+
+.detailbutton {
+  background-color: #1abc9c;
+  border: 2px solid #1abc9c;
+  width: 40%;
+  border-radius: 5px;
+  float: left;
+  margin-left: 10px;
+}
+
+.bestelbutton {
+  background-color: #1abc9c;
+  border: 2px solid #1abc9c;
+  width: 40%;
+  border-radius: 5px;
+  float: right;
+  margin-right: 10px
+}
+

@@ -12,11 +12,14 @@
       try {
         $op = isset($_REQUEST['op'])?$_REQUEST['op']:NULL;
         switch ($op) {
+          case 'create':
+          $this->collectCreateUserForm();
+          break;
+          case 'createProduct' :
+          $this->collectCreateUser();
+          break;
           case 'details':
           $this->collectDetails($_REQUEST['id']);
-          break;
-          case 'winkelwagen':
-          $this->collectShoppingCart();
           break;
           case 'products':
           $this->collectReadProducts();
@@ -45,6 +48,14 @@
     public function collectShoppingCart() {
       // $shoppingCart = $this->ProductsLogic->collectShoppingCart();
       include 'view/shoppingCart/shoppingCart.php';
+    }
+    public function collectCreateProductForm() {
+      include 'view/createProducts.php';
+    }
+    public function collectCreateProduct() {
+      $formData = $_REQUEST;
+      $createProduct = $this->ProductsLogic->createProduct($formData);
+      include 'view/succes.php'; // bestaat nog niet
     }
     
   }

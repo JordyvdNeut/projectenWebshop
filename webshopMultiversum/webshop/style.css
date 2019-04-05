@@ -49,5 +49,9 @@ button {
   font-weight: bold;
 }
 
+.navbar-brand {
+  font-family: quicksand;	
+}
+
 
 /* ID's */

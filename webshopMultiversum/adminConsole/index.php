@@ -18,21 +18,21 @@
     <?php
       require_once 'controller/authController.php';
       require_once 'controller/productsController.php';
-      
-      $this->authController = new AuthController();
-      $this->productsController = new ProductsController();
 
-      if($this->authController->auth != true){
+      $authController = new AuthController();
+      $productsController = new ProductsController();
+
+      if($authController->authRequest() != true){
         // login page
-        $this->authController->handleRequest();
+        $authController->handleRequest();
       }
 
-      if($this->authController->auth == true) {
+      if($authController->authRequest() == true) {
         // Header
         include 'view/navigation/navBar/navBar.php';
 
         // Content
-        $this->productsController->handleRequest();
+        $productsController->handleRequest();
 
         // Footer
         include 'view/navigation/footer/footer.php';

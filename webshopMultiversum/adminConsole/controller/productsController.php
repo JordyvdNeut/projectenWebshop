@@ -33,6 +33,14 @@
       // $details = $this->ProductsLogic->collectDetails($id);
       include 'view/producten/products.php';
     }
+    public function collectCreateProductForm() {
+      include 'view/createProducts.php';
+    }
+    public function collectCreateProduct() {
+      $formData = $_REQUEST;
+      $createProduct = $this->ProductsLogic->createProduct($formData);
+      include 'view/succes.php'; // bestaat nog niet
+    }
     
   }
 ?>

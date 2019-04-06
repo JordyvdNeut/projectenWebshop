@@ -12,6 +12,7 @@
       while($row = $brands->fetch(PDO::FETCH_ASSOC)) {
         $html .=  "<input type='checkbox' name='" . $row['Merk'] . "' value='" . $row['Merk'] . "'>" . " " . $row['Merk'] . "<br>";
       }
+      $html .=  "</div>";
     }
 
     // products

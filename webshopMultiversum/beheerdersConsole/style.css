@@ -30,7 +30,8 @@ button {
 /* Classes */
 
 .productMarg {
-  margin: 15px;
+  margin-block-end: 15px;
+  margin-inline-end: 15px;
 }
 .footer {
   background-color: #f1c40f;
@@ -40,18 +41,3 @@ button {
   overflow: hidden;
   font-weight: bold;
 }
-
-.filter {
-  background-color: #1abc9c;
-  border-radius: 5px;
-  height: 500px;
-  color: #000000;
-  font-weight: bold;
-}
-
-.navbar-brand {
-  font-family: quicksand;	
-}
-
-
-/* ID's */

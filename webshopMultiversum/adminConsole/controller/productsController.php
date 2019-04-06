@@ -15,14 +15,8 @@
           case 'details':
           $this->collectDetails($_REQUEST['id']);
           break;
-          case 'winkelwagen':
-          $this->collectShoppingCart();
-          break;
-          case 'products':
-          $this->collectReadProducts();
-          break;
           default:
-          $this->getHomePage();
+          $this->collectReadProducts();
           break;
         }			
       } catch (ValidationException $e) {
@@ -30,21 +24,14 @@
   
       }
     }
-    public function getHomePage() {
-      include 'view/home/home.php';
-    }
     public function collectReadProducts() {
-      $products = $this->ProductsLogic->readProducts();
-      $brands = $this->ProductsLogic->collectBrands();
+      // $products = $this->ProductsLogic->readProducts();
+      // $brands = $this->ProductsLogic->collectBrands();
       include 'view/products/products.php';
     }
     public function collectDetails($id) {
-      $details = $this->ProductsLogic->collectDetails($id);
-      include 'view/productDetails/productDetails.php';
-    }
-    public function collectShoppingCart() {
-      // $shoppingCart = $this->ProductsLogic->collectShoppingCart();
-      include 'view/shoppingCart/shoppingCart.php';
+      // $details = $this->ProductsLogic->collectDetails($id);
+      include 'view/producten/products.php';
     }
     
   }

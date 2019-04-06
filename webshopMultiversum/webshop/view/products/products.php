@@ -1,16 +1,17 @@
 <section>
     <?php
+    require_once "controller/productsController.php";
+
     $html = "";
+
     // Filter
     if($brands) {
-        $html .=  "<div class='filter col-md-1 sidebar'>";
-        $html .=  "<h2>Filter</h2>";
-        $html .=  "<form action='/action_page.php'>";
-        while($row = $brands->fetch(PDO::FETCH_ASSOC)) {
-            $html .=  "<input type='checkbox' name='brand' value='" . $row['Merk'] . "'>" . " " . $row['Merk'] . "<br>";
-        }
-        $html .=  "</form>";
-        $html .=  "</div>";
+      $html .=  "<div class='filter col-md-2 sidebar'>";
+      $html .=  "<h2>Filter</h2>";
+      $html .=  "<form method='post' action='/action_page.php'>";
+      while($row = $brands->fetch(PDO::FETCH_ASSOC)) {
+        $html .=  "<input type='checkbox' name='" . $row['Merk'] . "' value='" . $row['Merk'] . "'>" . " " . $row['Merk'] . "<br>";
+      }
     }
 
     // products
@@ -18,7 +19,7 @@
         while($row = $products->fetch(PDO::FETCH_ASSOC)) {
             $html .= "<div class='col-md-3 productMarg thumbnail' href='index?op=details'>";
             $html .=  "<h3>" . $row['Naam'] . "</h3>";
-            // $html .=  "<img src='" . echo $row['Img']; . "' class='img-responsive' alt='fix img' />";
+            // $html .=  "<img src='" . $row['Img'] . "' class='img-responsive' alt='fix img' />";
             $html .=  "<div class='caption'>";
             $html .=  "<table>";
             $html .=  "<tr>";

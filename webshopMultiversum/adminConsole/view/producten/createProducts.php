@@ -18,7 +18,7 @@
       <input class="form-control" type="text" name="product_connections" placeholder="Aansluitingen">
       <input class="form-control" type="text" name="product_accessories" placeholder="Accessoires">
       <br />
-      <input class="form-control" type="text" name="product_particularities" placeholder="Bijzonderheden">
+      <textarea class="form-control" type="text" name="product_particularities" placeholder="Bijzonderheden"></textarea>
       <br />
       <input type="submit" class="btn">
     </form>

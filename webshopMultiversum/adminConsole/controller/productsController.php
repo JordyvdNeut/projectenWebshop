@@ -13,12 +13,15 @@
         $op = isset($_REQUEST['op'])?$_REQUEST['op']:NULL;
         switch ($op) {
           case 'createForm':
-          $this->collectCreateProductForm();
+          $this->collectCreateForm();
           break;
           case 'createProduct':
           $this->createProduct();
           break;
           case 'bewerken':
+          $this->collectUpdateFrom($_REQUEST['id']);
+          break;
+          case 'bewerkt':
           $this->updateProduct($_REQUEST['id']);
           break;
           case 'verwijderen':
@@ -40,13 +43,21 @@
       $products = $this->ProductsLogic->readProducts();
       include 'view/producten/products.php';
     }
-    public function collectCreateProductForm() {
+    public function collectCreateForm() {
       include 'view/producten/createProducts.php';
     }
     public function createProduct() {
       $formData = $_REQUEST;
       $createProduct = $this->ProductsLogic->createProduct($formData);
       include 'view/created.php';
+    }
+    public function collectUpdateFrom($id) {
+      $update = $this->ProductsLogic->readProduct($id);
+      include 'view/producten/updateProduct.php';
+    }
+    public function updateProduct($id) {
+      // $updated = $this->ProductsLogic->updateProduct($id);
+      include 'view/updated.php';
     }
     public function aksDumpProduct($id) {
       $remove = $this->ProductsLogic->readProduct($id);

@@ -17,6 +17,11 @@ button {
   margin: 5px;
 }
 
+textarea {
+  min-width: 100%;
+  max-width: 100%;
+}
+
 /* Classes */
 .loginDiv {
   background-color: white;

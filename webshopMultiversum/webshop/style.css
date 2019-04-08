@@ -1,4 +1,4 @@
-html, body{
+html, body {
   margin: 0px;
 }
 
@@ -32,6 +32,7 @@ button {
 .productMarg {
   margin: 15px;
 }
+
 .footer {
   background-color: #f1c40f;
   border-radius: 5px;
@@ -47,11 +48,11 @@ button {
   height: 500px;
   color: #000000;
   font-weight: bold;
+  font-family: Quicksand;
 }
 
 .navbar-brand {
-  font-family: quicksand;	
+  font-family: quicksand;
 }
-
 
 /* ID's */

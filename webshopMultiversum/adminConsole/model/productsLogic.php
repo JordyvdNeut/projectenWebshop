@@ -45,12 +45,22 @@ class ProductsLogic
     }
   }
 
+  public function readProduct($id) {
+    try {
+      $sql = "SELECT * FROM producten WHERE ProductsID = " . $id;
+      $result = $this->DataHandler->readsData($sql);
+      return $result;
+    } catch (exception $e) {
+      throw $e;
+    }
+  }
+
   public function dumpProduct($id)
   {
     try {
-      $sql = "DELETE FROM producten WHERE id = " . $id;
+      $sql = "DELETE FROM producten WHERE ProductsID = " . $id;
       $result = $this->DataHandler->deleteData($sql);
-      return $result ? "User is verwijderd" : "Verwijderen niet gelukt (kijk of deze user nog bestaat)";
+      return $result ? "Product is succesvol verwijderd" : "Het verwijderen van dit product is helaas niet gelukt";
     } catch (exception $e) {
       throw $e;
     }

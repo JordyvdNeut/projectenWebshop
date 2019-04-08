@@ -24,6 +24,9 @@
           case 'verwijderen':
           $this->aksDumpProduct($_REQUEST['id']);
           break;
+          case 'verwijderd':
+          $this->dumpProduct($_REQUEST['id']);
+          break;
           default:
           $this->collectReadProducts();
           break;
@@ -46,12 +49,12 @@
       include 'view/created.php';
     }
     public function aksDumpProduct($id) {
-      return $id;
+      $remove = $this->ProductsLogic->readProduct($id);
       include 'view/producten/removeProduct.php';
     }
     public function dumpProduct($id) {
-      $remove = $this->ProductsLogic->dumpProduct($id);
-      include 'view/producten/removeProduct.php';
+      $removed = $this->ProductsLogic->dumpProduct($id);
+      include 'view/removed.php';
     }
     
   }

@@ -13,6 +13,9 @@ body {
   src: url(Quicksand_Light.otf);
 }
 
+button {
+  margin: 5px;
+}
 
 /* Classes */
 .loginDiv {
@@ -30,5 +33,12 @@ body {
   font-weight: bold;
 }
 
+.removeBtn {
+  color: red;
+}
+
+.createBtn {
+  background-color: #1abc9c;
+}
 
 /* ID's */

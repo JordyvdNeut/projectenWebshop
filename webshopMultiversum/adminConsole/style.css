@@ -24,13 +24,9 @@ button {
   width: 300px;  
 }
 
-.footer {
-  background-color: #f1c40f;
-  border-radius: 5px;
-  height: 25px;
-  width: 100%;
-  overflow: hidden;
-  font-weight: bold;
+.form-control {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .removeBtn {
@@ -39,6 +35,15 @@ button {
 
 .createBtn {
   background-color: #1abc9c;
+}
+
+.footer {
+  background-color: #f1c40f;
+  border-radius: 5px;
+  height: 25px;
+  width: 100%;
+  overflow: hidden;
+  font-weight: bold;
 }
 
 /* ID's */

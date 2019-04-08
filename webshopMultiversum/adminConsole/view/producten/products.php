@@ -17,7 +17,7 @@
       $html .=  "<p>" . "Prijs: " . $row['Prijs'] . " " . " ";
       $html .=  "Merk: " . $row['Merk'] . "</p>";
       $html .=  "<a href='index?op=bewerken&id=" . $row['ProductsID'] . "'><button class='btn'>Bewerken</button></a>";
-      $html .=  "<a href='index?op=delProduct&id=" . $row['ProductsID'] . "'><button type='submit' class='btn'>Verwijderen</button></a>";
+      $html .=  "<a href='index?op=verwijderen&id=" . $row['ProductsID'] . "'><button type='submit' class='btn'>Verwijderen</button></a>";
       $html .=  "</div>";
     }
     echo $html;

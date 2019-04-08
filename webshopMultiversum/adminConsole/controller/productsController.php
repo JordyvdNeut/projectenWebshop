@@ -22,7 +22,7 @@
           $this->updateProduct($_REQUEST['id']);
           break;
           case 'verwijderen':
-          $this->dumpProduct($_REQUEST['id']);
+          $this->aksDumpProduct($_REQUEST['id']);
           break;
           default:
           $this->collectReadProducts();
@@ -44,6 +44,10 @@
       $formData = $_REQUEST;
       $createProduct = $this->ProductsLogic->createProduct($formData);
       include 'view/created.php';
+    }
+    public function aksDumpProduct($id) {
+      return $id;
+      include 'view/producten/removeProduct.php';
     }
     public function dumpProduct($id) {
       $remove = $this->ProductsLogic->dumpProduct($id);

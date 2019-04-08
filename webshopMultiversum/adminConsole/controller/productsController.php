@@ -12,8 +12,17 @@
       try {
         $op = isset($_REQUEST['op'])?$_REQUEST['op']:NULL;
         switch ($op) {
-          case 'details':
-          $this->collectDetails($_REQUEST['id']);
+          case 'createForm':
+          $this->collectCreateProductForm();
+          break;
+          case 'createProduct':
+          $this->createProduct();
+          break;
+          case 'bewerken':
+          $this->updateProduct($_REQUEST['id']);
+          break;
+          case 'verwijderen':
+          $this->dumpProduct($_REQUEST['id']);
           break;
           default:
           $this->collectReadProducts();
@@ -25,21 +34,20 @@
       }
     }
     public function collectReadProducts() {
-      // $products = $this->ProductsLogic->readProducts();
-      // $brands = $this->ProductsLogic->collectBrands();
-      include 'view/products/products.php';
-    }
-    public function collectDetails($id) {
-      // $details = $this->ProductsLogic->collectDetails($id);
+      $products = $this->ProductsLogic->readProducts();
       include 'view/producten/products.php';
     }
     public function collectCreateProductForm() {
-      include 'view/createProducts.php';
+      include 'view/producten/createProducts.php';
     }
-    public function collectCreateProduct() {
+    public function createProduct() {
       $formData = $_REQUEST;
       $createProduct = $this->ProductsLogic->createProduct($formData);
-      include 'view/succes.php'; // bestaat nog niet
+      include 'view/created.php';
+    }
+    public function dumpProduct($id) {
+      $remove = $this->ProductsLogic->dumpProduct($id);
+      include 'view/producten/removeProduct.php';
     }
     
   }

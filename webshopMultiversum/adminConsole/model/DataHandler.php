@@ -31,6 +31,15 @@
     public function readsData($sql){
       return $this->dbh->query($sql,PDO::FETCH_ASSOC);
     }
+
+    public function createData($sql) {
+      $sth = $this->dbh->query($sql);
+      return $sth;
+    }
+  
+    public function deleteData($sql){
+			$sth = $this->dbh->query($sql);
+			return $sth->rowCount();
+	}
   
   }
-?>

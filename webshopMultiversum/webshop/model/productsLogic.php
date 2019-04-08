@@ -38,7 +38,25 @@
   }
 }
 
-    public function collectShoppingCart() {}
+  public function collectShoppingCart($id) {
+    try {
+      $sql = "INSERT INTO Shoppingcart SELECT * FROM producten WHERE ProductsId = " . $id;
+      $result = $this->DataHandler->readsData($sql);
+      return $result;
+  } catch (exception $e) {
+      throw $e;
+  }
+}
+
+  public function collectDeleteProduct($id) {
+    try {
+      $sql = "DELETE FROM Shoppingcart WHERE ProductsId = " . $id;
+      $result = $this->DataHandler->readsData($sql);
+      return $result;
+  } catch (exception $e) {
+      throw $e;
+  }
+}
       
     public function __destruct() {}
   }

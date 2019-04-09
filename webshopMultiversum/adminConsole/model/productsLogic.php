@@ -19,6 +19,18 @@ class ProductsLogic
       throw $e;
     }
   }
+    
+  public static function getProductPic($id)
+  {
+      $pictureData = DB::query("Select products.id, product_images.* FROM products 
+      INNER JOIN product_images ON products.id = product_images.product_id WHERE products.id=%s LIMIT 1", $id);
+      if (empty($pictureData)) {
+          $picture = "default.png";
+      } else {
+          $picture = $pictureData[0]['img_name'];
+      }
+      return "<img class='responsive-img materialboxed' src='./Templates/default/web-gallary/assets/images/products/" . $picture . "'>";
+  }
 
   public function createProduct($formData)
   {

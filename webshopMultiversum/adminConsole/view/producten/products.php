@@ -14,7 +14,7 @@
       $row['Prijs'] = str_replace('.', ',', $row['Prijs']);
       $row = preg_replace('/^$/', '<i>Geen gevens kunnen vinden</i>', $row);
 
-      $html .= "<div class='productMarg thumbnail'>";
+      $html .= "<div class='col-md-4 productMarg thumbnail'>";
       // $html .=  "<img src='" . echo $row['Img']; . "' class='img-responsive' alt='fix img' />";
       $html .=  "<h3><b>" . $row['Naam'] . "</b></h3>";
       $html .=  "<p>" . "<b>Prijs: </b>€" . $row['Prijs'] . " " . " ";

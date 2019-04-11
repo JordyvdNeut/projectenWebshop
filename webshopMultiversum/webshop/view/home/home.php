@@ -2,7 +2,7 @@
     <div class="thumbnail" id="aanbiedingen">
         <h2>Aanbiedingen:</h2>
         <?php
-            echo "Sorry de producten kunnen niet geladen worden";
+            echo "Sorry de producten kunnen momenteel niet geladen worden";
         // if ($products) {
             // while ($row = $products->fetch(PDO::FETCH_ASSOC)) {
             //     $row['Prijs'] = str_replace('.', ',', $row['Prijs']);

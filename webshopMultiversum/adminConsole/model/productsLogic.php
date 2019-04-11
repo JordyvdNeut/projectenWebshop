@@ -72,6 +72,7 @@ class ProductsLogic
     $id = $formData['id'];
     $Naam = $formData["product_name"];
     $Prijs = $formData["product_price"];
+    $AanbiedingPrijs = $formData["product_sales_price"];
     $Merk = $formData["product_brand"];
     $Kleur = $formData["product_color"];
     $Resolutie = $formData["product_resolution"];
@@ -80,11 +81,12 @@ class ProductsLogic
     $Functies = $formData["product_functions"];
     $Aansluitingen = $formData["product_connections"];
     $Accessoires = $formData["product_accessories"];
+    // $InAanbieding = $formData["product_sale"];
     $Bijzonderheden = $formData["product_particularities"];
 
     try {
       $sql = "UPDATE producten SET 
-      Naam = '$Naam', Prijs = '$Prijs', Merk = '$Merk', Kleur = '$Kleur', 
+      Naam = '$Naam', Prijs = '$Prijs', AanbiedingPrijs = '$AanbiedingPrijs', Merk = '$Merk', Kleur = '$Kleur', 
       Resolutie = '$Resolutie', RefreshRate = '$RefreshRate', Gezichtsveld = '$Gezichtsveld', 
       Functies = '$Functies', Aansluitingen = '$Aansluitingen', Accessoires = '$Accessoires', 
       Bijzonderheden = '$Bijzonderheden' WHERE ProductsID = " . $id;

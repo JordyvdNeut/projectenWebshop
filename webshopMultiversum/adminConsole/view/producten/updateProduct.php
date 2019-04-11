@@ -14,9 +14,10 @@
     $html .= "<input class='form-control' type='text' value='" . $row['Naam'] . "' name='product_name' required>";
     $html .= "<label>Prijs: </label>";
     $html .= "<input class='form-control' type='number' value='" . $row['Prijs'] . "' name='product_price' required>";
+    $html .= "<label>Prijs voor Aanbieding: </label>";
+    $html .= "<input class='form-control' type='number' value='" . $row['AanbiedingPrijs'] . "' name='product_sales_price'>";
     $html .= "<label>Merk: </label>";
     $html .= "<input class='form-control' type='text' value='" . $row['Merk'] . "' name='product_brand' required>";
-    $html .= "<br />";
     $html .= "<label>Kleur: </label>";
     $html .= "<input class='form-control' type='text' value='" . $row['Kleur'] . "' name='product_color'>";
     $html .= "<label>Resolutie: </label>";
@@ -31,9 +32,11 @@
     $html .= "<input class='form-control' type='text' value='" . $row['Aansluitingen'] . "' name='product_connections'>";
     $html .= "<label>Accessoires: </label>";
     $html .= "<input class='form-control' type='text' value='" . $row['Accessoires'] . "' name='product_accessories'>";
-    $html .= "<br />";
     $html .= "<label>Bijzonderheden: </label>";
     $html .= "<textarea class='form-control' type='text' value='" . $row['Bijzonderheden'] . "' name='product_particularities'></textarea>";
+    // $html .= "<label>In de aanbieding: </label>";
+    // $html .= "<input type='checkbox' value='" . $row['InAanbieding'] . "' name='product_sale'>";
+    // $html .= "<br />";
     $html .= "<br />";
     $html .= "<input type='submit' class='btn' value='Bewerken'>";
     $html .= "</form>";

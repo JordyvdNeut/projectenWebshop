@@ -11,10 +11,13 @@
   // products
   if ($products) {
     while ($row = $products->fetch(PDO::FETCH_ASSOC)) {
+      $row['Prijs'] = str_replace('.', ',', $row['Prijs']);
+      $row = preg_replace('/^$/', '<i>Geen gevens kunnen vinden</i>', $row);
+
       $html .= "<div class='productMarg thumbnail'>";
       // $html .=  "<img src='" . echo $row['Img']; . "' class='img-responsive' alt='fix img' />";
       $html .=  "<h3><b>" . $row['Naam'] . "</b></h3>";
-      $html .=  "<p>" . "<b>Prijs: </b>" . $row['Prijs'] . " " . " ";
+      $html .=  "<p>" . "<b>Prijs: </b>€" . $row['Prijs'] . " " . " ";
       $html .=  "<b>Merk: </b>" . $row['Merk'] . "</p>";
       $html .=  "<a href='index?op=bewerken&id=" . $row['ProductsID'] . "'><button class='btn'><span class='glyphicon glyphicon-pencil'></span> Bewerken</button></a>";
       $html .=  "<a href='index?op=verwijderen&id=" . $row['ProductsID'] . "'><button type='submit' class='btn removeBtn'><span class='glyphicon glyphicon-remove'></span> Verwijderen</button></a>";

@@ -16,7 +16,7 @@
           $this->collectDetails($_REQUEST['id']);
           break;
           case 'winkelwagen':
-          $this->collectShoppingCart($_REQUEST['id']);
+          $this->collectShoppingCart();
           break;
           case 'removeProduct':
           $this->collectDeleteProduct($_REQUEST['id']);
@@ -45,7 +45,7 @@
       $details = $this->ProductsLogic->collectDetails($id);
       include 'view/productDetails/productDetails.php';
     }
-    public function collectShoppingCart($id) {
+    public function collectShoppingCart() {
       // $shoppingCart = $this->ProductsLogic->collectShoppingCart($id);
       include 'view/shoppingCart/shoppingCart.php';
     }

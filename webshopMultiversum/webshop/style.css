@@ -30,7 +30,7 @@ button {
 /* Classes */
 
 .productMarg {
-  margin: 15px;
+  margin-inline-end: 15px;
 }
 
 .footer {

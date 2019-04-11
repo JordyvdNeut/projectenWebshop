@@ -84,16 +84,10 @@ class ProductsLogic
 
     try {
       $sql = "UPDATE producten SET 
-      Naam = " .  $Naam . ", Prijs = " . $Prijs . ", Merk = " . $Merk . ", Kleur = " . $Kleur . ", 
-      Resolutie = " . $Resolutie . ", RefreshRate " . $RefreshRate . ", Gezichtsveld = " . $Gezichtsveld . ", 
-      Functies = " . $Functies . ", Aansluitingen = " . $Aansluitingen . ", Accessoires = " . $Accessoires . ", 
-      Bijzonderheden = " . $Bijzonderheden . " WHERE ProductsID = " . $id;
-      // $sql = "UPDATE producten SET 
-      // Naam = $Naam, Prijs = $Prijs, Merk =  $Merk , Kleur =  $Kleur , 
-      // Resolutie =  $Resolutie , RefreshRate  $RefreshRate , Gezichtsveld =  $Gezichtsveld , 
-      // Functies =  $Functies , Aansluitingen =  $Aansluitingen , Accessoires =  $Accessoires , 
-      // Bijzonderheden =  $Bijzonderheden  WHERE ProductsID = $id";
-      echo $sql;
+      Naam = '$Naam', Prijs = '$Prijs', Merk = '$Merk', Kleur = '$Kleur', 
+      Resolutie = '$Resolutie', RefreshRate = '$RefreshRate', Gezichtsveld = '$Gezichtsveld', 
+      Functies = '$Functies', Aansluitingen = '$Aansluitingen', Accessoires = '$Accessoires', 
+      Bijzonderheden = '$Bijzonderheden' WHERE ProductsID = " . $id;
       $result = $this->DataHandler->updateData($sql);
       return $result ? "Product is succesvol bewerkt!" : "Bewerken van het product is niet gelukt";
     } catch (exception $e) {

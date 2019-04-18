@@ -8,7 +8,7 @@
             //     $row['Prijs'] = str_replace('.', ',', $row['Prijs']);
             //     $row = preg_replace('/^$/', '<i>Geen gevens kunnen vinden</i>', $row);
 
-            //     $html .= "<div class='col-md-3 productMarg thumbnail' href='index?op=details'>";
+            //     $html .= "<div class='col-md-2 productMarg thumbnail' href='index?op=details'>";
             //     $html .=  "<h3>" . $row['Naam'] . "</h3>";
             //     // $html .=  "<img src='" . $row['Img'] . "' class='img-responsive' alt='fix img' />";
             //     $html .=  "<div class='caption'>";

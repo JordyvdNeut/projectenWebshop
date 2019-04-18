@@ -30,6 +30,9 @@
           case 'verwijderd':
           $this->dumpProduct($_REQUEST['id']);
           break;
+          case 'contact':
+            $this->getContactPage();
+            break;
           default:
           $this->collectReadProducts();
           break;
@@ -44,6 +47,12 @@
     public function collectReadProducts() {
       $products = $this->ProductsLogic->readProducts();
       include 'view/producten/products.php';
+    }
+    public function getContactPage()
+    {
+      $contactInfo = $this->ContactLogic->readContactInfo();
+      $contactLocation = $this->ContactLogic->readContactLocation();
+      include 'view/contact/contact.php';
     }
 
     // Create

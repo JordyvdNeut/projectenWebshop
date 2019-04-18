@@ -81,7 +81,6 @@ class ProductsLogic
     $Functies = $formData["product_functions"];
     $Aansluitingen = $formData["product_connections"];
     $Accessoires = $formData["product_accessories"];
-    // $InAanbieding = $formData["product_sale"];
     $Bijzonderheden = $formData["product_particularities"];
 
     try {

@@ -7,7 +7,7 @@
 
     $html .= "<div class='col-md-4 thumbnail'>";
     $html .= "<h2>Bewerk hier <strong>" . $row['Naam'] . "</strong></h2>";
-    $html .= "<p>Product id: <strong>" . $row['ProductsID'] . "</strong></p>";
+    $html .= "<p>Product code: <strong>" . $row['ProductsID'] . "</strong></p>";
     $html .= "<br />";
     $html .= "<form action='index.php?op=bewerkt&id=" . $row['ProductsID'] . "'method='post'>";
     $html .= "<label>Product naam: </label>";
@@ -34,9 +34,7 @@
     $html .= "<input class='form-control' type='text' value='" . $row['Accessoires'] . "' name='product_accessories'>";
     $html .= "<label>Bijzonderheden: </label>";
     $html .= "<textarea class='form-control' type='text' value='" . $row['Bijzonderheden'] . "' name='product_particularities'></textarea>";
-    // $html .= "<label>In de aanbieding: </label>";
-    // $html .= "<input type='checkbox' value='" . $row['InAanbieding'] . "' name='product_sale'>";
-    // $html .= "<br />";
+    $html .= "<br />";
     $html .= "<br />";
     $html .= "<input type='submit' class='btn' value='Bewerken'>";
     $html .= "</form>";

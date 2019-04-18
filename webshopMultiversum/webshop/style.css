@@ -27,6 +27,10 @@ button {
   margin: 5px;
 }
 
+a, a:hover, a:link, a:visited {
+  text-decoration: none;
+}
+
 /* Classes */
 
 .productMarg {
@@ -50,8 +54,8 @@ button {
   font-weight: bold;
 }
 
-.navbar-brand {
+/* .navbar-brand {
   font-family: quicksand;
-}
+} */
 
 /* ID's */

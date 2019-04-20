@@ -5,15 +5,12 @@
 
     $html .= "<div class='col-md-3 thumbnail'>";
     $html .= "<img src='https://randomuser.me/api/portraits/men/83.jpg' alt='Afbeelding niet gevonden'>";
-    $html .= "<h3>" . $row['fname'] . " " . $row['lname'] . "</h3>";
-    $html .= "<p>" . $row['email'] . "</p>";
+    $html .= "<hr />";
+    $html .= "<h3>Contact informatie, " . $row['companyname'] . "</h3>";
+    $html .= "<p>Naam: " . $row['fname'] . " " . $row['lname'] . "</p>";
+    $html .= "<p>E-mail: " . $row['email'] . "</p>";
     $html .= "<br />";
-  }
-
-  while ($row = $contactLocation->fetch(PDO::FETCH_ASSOC)) {
-    $row = preg_replace('/^$/', '<i>Geen gevens kunnen vinden</i>', $row);
-
-    $html .= "<br />";
+    $html .= "<hr />";
     $html .= "<h4>Bedrijfs locatie</h4>";
     $html .= "<p>Straat: " . $row['street'] . "</p>";
     $html .= "<p>Stad: " . $row['city'] . "</p>";

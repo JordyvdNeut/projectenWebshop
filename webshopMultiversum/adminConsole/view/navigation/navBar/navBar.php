@@ -7,6 +7,7 @@
     <ul class="nav navbar-nav">
       <li><a href="index?op=products">Producten</a></li>
       <li><a href="index?op=createForm">Product toevoegen</a></li>
+      <li><a href="index?op=contactForm">Contact pagina</a></li>
     </ul>
   </div>
 </nav>

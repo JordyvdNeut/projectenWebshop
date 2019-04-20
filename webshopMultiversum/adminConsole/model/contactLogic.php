@@ -13,7 +13,7 @@ class ContactLogic
   public function readContactInfo()
   {
     try {
-      $sql = "SELECT * FROM contactinfo";
+      $sql = "SELECT * FROM contactinfo WHERE id = 1";
       $result = $this->DataHandler->readsData($sql);
       return $result;
     } catch (exception $e) {
@@ -21,12 +21,24 @@ class ContactLogic
     }
   }
 
-  public function readContactLocation()
+  public function updateContactInfo($formData)
   {
+    $companyname = $formData["companyname"];
+    $fname = $formData["fname"];
+    $lname = $formData["lname"];
+    $email = $formData["email"];
+    $street = $formData["street"];
+    $city = $formData["city"];
+    $state = $formData["state"];
+    $postcode = $formData["postcode"];
+
     try {
-      $sql = "SELECT * FROM contactlocation";
-      $result = $this->DataHandler->readsData($sql);
-      return $result;
+      $sql = "UPDATE contactinfo SET 
+      companyname = '$companyname', fname = '$fname', lname = '$lname', email = '$email', street = '$street', 
+      city = '$city', state = '$state', postcode = '$postcode'
+      WHERE id = 1";
+      $result = $this->DataHandler->updateData($sql);
+      return $result ? "De contact gegevens zijn succesvol bewerkt!" : "Het bewerken van de contact gegevens is niet gelukt";
     } catch (exception $e) {
       throw $e;
     }

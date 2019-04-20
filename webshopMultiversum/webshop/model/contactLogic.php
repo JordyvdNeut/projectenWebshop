@@ -21,17 +21,6 @@ class ContactLogic
     }
   }
 
-  public function readContactLocation()
-  {
-    try {
-      $sql = "SELECT * FROM contactlocation";
-      $result = $this->DataHandler->readsData($sql);
-      return $result;
-    } catch (exception $e) {
-      throw $e;
-    }
-  }
-
   public function __destruct()
   { }
 }

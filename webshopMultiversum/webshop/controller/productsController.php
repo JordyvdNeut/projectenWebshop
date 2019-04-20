@@ -47,7 +47,6 @@ class ProductsController
   public function getContactPage()
   {
     $contactInfo = $this->ContactLogic->readContactInfo();
-    $contactLocation = $this->ContactLogic->readContactLocation();
     include 'view/contact/contact.php';
   }
   public function collectReadProducts()

@@ -8,7 +8,7 @@
             <li><a href="index?op=home">Home</a></li>
             <li><a href="index">Producten</a></li>
             <li><a href="index?op=contact">Contact</a></li>
-            <li align="right"><a href="index?op=winkelwagen"><span class='glyphicon glyphicon-shopping-cart'></span> winkelwagen</a></li>
+            <li><a href="index?op=winkelwagen"><span class='glyphicon glyphicon-shopping-cart'></span> winkelwagen</a></li>
             </ul>
     </div>
 </nav> 

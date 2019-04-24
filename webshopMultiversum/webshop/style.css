@@ -27,10 +27,14 @@ button {
   margin: 5px;
 }
 
+a, a:hover, a:link, a:visited {
+  text-decoration: none;
+}
+
 /* Classes */
 
 .productMarg {
-  margin: 15px;
+  margin-inline-end: 15px;
 }
 
 .footer {
@@ -50,8 +54,8 @@ button {
   font-weight: bold;
 }
 
-.navbar-brand {
+/* .navbar-brand {
   font-family: quicksand;
-}
+} */
 
 /* ID's */

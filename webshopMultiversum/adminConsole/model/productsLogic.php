@@ -57,7 +57,8 @@ class ProductsLogic
     }
   }
 
-  public function readProduct($id) {
+  public function readProduct($id)
+  {
     try {
       $sql = "SELECT * FROM producten WHERE ProductsID = " . $id;
       $result = $this->DataHandler->readsData($sql);
@@ -78,12 +79,13 @@ class ProductsLogic
     }
   }
 
-  public function updateProduct($id, $formData)
+  public function updateProduct($formData)
   {
+    $id = $formData['id'];
     $Naam = $formData["product_name"];
     $Prijs = $formData["product_price"];
+    $AanbiedingPrijs = $formData["product_sales_price"];
     $Merk = $formData["product_brand"];
-    $Img = $formData["product_img"];
     $Kleur = $formData["product_color"];
     $Resolutie = $formData["product_resolution"];
     $RefreshRate = $formData["product_refresh_rate"];
@@ -92,15 +94,15 @@ class ProductsLogic
     $Aansluitingen = $formData["product_connections"];
     $Accessoires = $formData["product_accessories"];
     $Bijzonderheden = $formData["product_particularities"];
-    
+
     try {
       $sql = "UPDATE producten SET 
-      Naam = $Naam, Prijs = $Prijs, Merk = $Merk, Img = $Img, Kleur = $Kleur, 
-      Resolutie = $Resolutie, RefreshRate $RefreshRate, Gezichtsveld = $Gezichtsveld, 
-      Functies = $Functies, Aansluitingen = $Aansluitingen, Accessoires = $Accessoires, Bijzonderheden = $Bijzonderheden
-      WHERE ProductsID = " . $id;
+      Naam = '$Naam', Prijs = '$Prijs', AanbiedingPrijs = '$AanbiedingPrijs', Merk = '$Merk', Kleur = '$Kleur', 
+      Resolutie = '$Resolutie', RefreshRate = '$RefreshRate', Gezichtsveld = '$Gezichtsveld', 
+      Functies = '$Functies', Aansluitingen = '$Aansluitingen', Accessoires = '$Accessoires', 
+      Bijzonderheden = '$Bijzonderheden' WHERE ProductsID = " . $id;
       $result = $this->DataHandler->updateData($sql);
-      return $result;
+      return $result ? "Product is succesvol bewerkt!" : "Bewerken van het product is niet gelukt";
     } catch (exception $e) {
       throw $e;
     }

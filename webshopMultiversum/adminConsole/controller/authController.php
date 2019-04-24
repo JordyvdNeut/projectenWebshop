@@ -15,7 +15,7 @@ class AuthController
   public function handleRequest()
   {
     try {
-      $op = isset($_REQUEST['op']) ? $_REQUEST['op'] : NULL;
+      $op = isset($_REQUEST['auth']) ? $_REQUEST['auth'] : NULL;
       switch ($op) {
         case 'login':
           $this->login();
@@ -40,6 +40,7 @@ class AuthController
   public function isAuthenticated()
   {
     $this->auth = true;
+    return $this->auth;
     include 'view/producten/products.php';
   }
 
@@ -51,7 +52,10 @@ class AuthController
   public function login()
   {
     $formData = $_REQUEST;
+    var_dump($formData);
     $login = $this->authLogic->login($formData);
+    var_dump($login);
+    return $login;
     include 'view/login/loggingIn.php';
   }
 }

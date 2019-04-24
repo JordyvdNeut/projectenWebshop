@@ -4,6 +4,9 @@
 
     if ($details) {
       while($detail = $details->fetch(PDO::FETCH_ASSOC)) {
+        $detail['Prijs'] = str_replace('.', ',', $detail['Prijs']);
+        $detail = preg_replace('/^$/', '<i>Geen gevens kunnen vinden</i>', $detail);
+
         $html .= "<div class='thumbnail'>";
         $html .=  "<h2>" . $detail['Naam'] . "</h2>";
         $html .= "<div class='productDetail'>";
@@ -16,7 +19,7 @@
         $html .=  "</div>";
         $html .=  "<hr>";
         $html .=  "<div class='caption'>";
-        $html .=  "<h2>Productinformatie</h2>";
+        $html .=  "<h2>Product informatie</h2>";
         $html .=  "<table>";
         $html .=  "<tr>";
         $html .=  "<th>" . "Merk" . "</th>";
@@ -35,7 +38,7 @@
         $html .=  "<tr>";
         $html .=  "<th>" . "Refresh Rate" . "</th>";
         $html .=  "<td> </td>";
-        $html .=  "<td>" . $detail['Refresh Rate'] . "</td>";
+        $html .=  "<td>" . $detail['RefreshRate'] . "</td>";
         $html .=  "</tr>";
         $html .=  "<tr>";
         $html .=  "<th>" . "Functies" . "</th>";

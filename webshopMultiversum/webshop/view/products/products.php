@@ -36,7 +36,7 @@
       $html .=  "</table>";
       $html .=  "</div>";
       $html .=  "<a href='index?op=details&id=" . $row['ProductsID'] . "'><button class='btn'>Details</button></a>";
-      $html .=  "<a href='index?op=winkelwagen'><button class='btn'>Bestellen</button></a>";
+      // $html .=  "<a href='index?op=winkelwagen'><button class='btn'>Bestellen</button></a>";
       $html .=  "</a></div>";
     }
     echo $html;
